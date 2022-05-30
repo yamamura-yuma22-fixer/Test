@@ -8,7 +8,9 @@
     <div>{{ degreeOfDifficulty }}</div>
     <input type="range" v-model="interval" min="1" max="3000"/>
     <div>{{ interval }}ms</div>
-    <button @click="switchingValue">スタート</button>
+    <v-btn elevation="2" @click="switchingValue">
+      スタート
+    </v-btn>
     <div>{{ value }}</div>
     <input type="text" v-model="ans" :disabled="disabled" @change="checkAnswer"/>
   </div>
